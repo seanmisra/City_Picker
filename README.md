@@ -6,8 +6,8 @@
 <h2>Install</h2>
 <p>Prereqs: composer and npm should already be installed. Instructions are available online if needed.</p>  
 <ol>
-  <li>Download repo: <code>git clone git@github.com:seanmisra/a3.git</code></li>
-  <li>Within the a3 folder, add composer dependencies: <code>composer install</code></li>
+  <li>Download repo: <code>git clone git@github.com:seanmisra/City_Picker.git</code></li>
+  <li>Within the City_Picker folder, add composer dependencies: <code>composer install</code></li>
   <li>Create your .env doc: <code>cp .env.example .env</code></li>
   <li>Update the Google Maps API key (MAP_KEY) in .env. You can obtain a key free from: https://developers.google.com/maps/documentation/javascript/get-api-key</li> 
   <li>Generate an app key: <code>php artisan key:generate</code></li>
