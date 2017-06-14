@@ -1,0 +1,35 @@
+body {
+    text-align: center; 
+}
+
+.jumbotron {
+   height: 350px; 
+}
+
+input {
+    width: 50vw; 
+    padding-left: 20px;
+    font-weight: 550; 
+    margin-top: 5px; 
+    text-align: left; 
+}
+
+label {
+    font-size:35px;
+}
+
+.form-control {
+    width:50vw; 
+    height: 100px; 
+    font-size: 25px;
+}
+
+.adminOption{
+    display:none;
+}
+
+button {
+    width:50vw; 
+    height: 100px; 
+    font-size: 25px;   
+}  

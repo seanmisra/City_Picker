@@ -1,0 +1,443 @@
+/*-------------------------Loader GIF-------------------------*/
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    background: url('/images/rainbow_load.gif') 50% 50% no-repeat white;
+    position: fixed; 
+    z-index: 9999;
+    font-size: 30px; 
+    text-align: center;
+}
+
+.loader > p {
+    margin-top: 30vh; 
+}
+
+
+
+/*-------------------------Main Page-------------------------*/
+
+body {
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica;
+}
+
+.visiblePage {
+    opacity: 0; 
+}
+
+a:hover, a:focus, a:visited {
+    text-decoration: none; 
+}
+
+header {
+    text-align:center;
+}
+
+.jumbotron {
+    height: 50vh;
+    background-color: palegoldenrod;
+}
+
+.glyphicon-globe {
+    font-size:40px; 
+    color:grey;
+}
+
+.glyphicon-globe:hover {
+    color: black;    
+    transition: color 2s;
+}
+
+.popover-title {
+    text-align: center; 
+}
+
+.fa, .fa:focus, .fa:visited {
+    color: darkgrey;
+    opacity: .7; 
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.fa:hover {
+    color: grey; 
+}
+	
+.tutorial {
+    margin-top: -30px; 
+    font-size: 20px;
+    color: gray;
+    word-spacing: 3px;
+}
+
+#tutorialContent {
+    position: absolute; 
+    width: 100%; 
+    text-align: center; 
+}
+
+form {
+    margin-left: 27vw; 
+    margin-right: 27vw; 
+}
+
+label{
+    font-size: 20px;
+    color:dimgrey;
+}
+
+small {
+    padding-left:.5em;
+    font-size: 13px;
+}
+
+.alert {
+    margin-top: -4.8vh;
+}
+
+
+
+/*-------------------------Text Inputs-------------------------*/
+
+/*Text placeholder*/
+.magicLabel {
+    padding-top:1.3em;
+    padding-left:.8em;
+    position: absolute;
+    font-size: 25px;
+    opacity: .8;
+}
+
+input[type=text]{
+    height: 100px;
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+    background-color:white;
+    transition: background-color 5s ease;
+    border-width: 2.5px;
+}
+
+input[type=text]:focus{
+    border-width: 3px;
+    background-color:rgba(220, 220, 220, .3);
+}
+
+.ui-autocomplete { 
+    max-height: 170px; 
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+
+ul.ui-autocomplete {
+    border: 3px lightgrey solid !important;
+}
+
+
+
+/*-------------------------Slider CSS-------------------------*/
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+/*This is the temporary on-hover value*/
+#magicTemp {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    opacity: .8;
+    position: absolute; 
+    margin-left: 40vw; 
+    font-weight: 500;  
+}
+
+/*Slider settings for Webkit*/
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px lightgrey;
+    background: -webkit-linear-gradient(left, rgba(127,255,0,.4), rgba(255, 255, 0, .4), rgba(255, 165, 0, .4), rgba(255, 0, 0, .4)); 
+    border-radius: 40px;
+    border: 0px solid #000000;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: -webkit-linear-gradient(left, rgba(127,255,0,.6), rgba(255, 255, 0, .6), rgba(255, 165, 0, .6), rgba(255, 0, 0, .6));
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 40px;
+    width: 70px;
+    border-radius: 40px;
+    background: grey;
+    opacity: .6;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+/*Slider settings for Mozilla*/
+input[type=range]::-moz-range-track { 
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px lightgrey;
+    background: -moz-linear-gradient(left, rgba(127,255,0,.4), rgba(255, 255, 0, .4), rgba(255, 165, 0, .4), rgba(255, 0, 0, .4));
+    border-radius: 40px;
+    border: 0px solid #000000;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: -webkit-linear-gradient(left, rgba(127,255,0,.6), rgba(255, 255, 0, .6), rgba(255, 165, 0, .6), rgba(255, 0, 0, .6));
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 40px;
+    width: 70px;
+    border-radius: 40px;
+    background: lightgrey;
+    opacity: .5;
+    cursor: pointer;
+}
+
+/*Slider settings for IE*/
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: -ms-linear-gradient(left, rgba(127,255,0,.4), rgba(255, 255, 0, .4), rgba(255, 165, 0, .4), rgba(255, 0, 0, .4)); 
+    border: 0px solid #000000;
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: -ms-linear-gradient(left, rgba(127,255,0,.4), rgba(255, 255, 0, .4), rgba(255, 165, 0, .4), rgba(255, 0, 0, .4)); 
+    border: 0px solid #000000;
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 40px;
+    width: 70px;
+    border-radius: 40px;
+    background: #529DE1;
+    opacity: .5; 
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: lightgrey;
+}
+
+
+
+/*-------------------------Drop-down Menu-------------------------*/
+
+.purposeInput {
+    height: 100px;
+    font-size:25px;
+    color: rgb(20, 20, 20);
+}
+
+#closeTripOption {
+    margin-top:30px;
+}
+
+
+
+/*-------------------------Submit Button-------------------------*/
+
+/*This is essentially a container for submit button*/
+#submit {
+    text-align:center;
+    padding-bottom: 50px;
+}
+
+#submitButton {
+    width:25vw;
+    height: 85px;
+    font-size: 25px; 
+    color: white; 
+    text-transform: uppercase;
+}
+
+#submitButton:hover {
+    color: seagreen; 
+    background-color: white; 
+    border-color: seagreen;
+}
+
+#submitButton:active, #submitButton:focus {
+    outline:none; 
+}
+
+#buttonText {
+    transition: margin-right .3s;
+}
+
+#arrowIcon {
+    display: none; 
+}
+
+
+
+/*-----------------------------Info Boxes-----------------------------*/
+
+.infoSquare {
+    border-radius: 5px; 
+    position: absolute; 
+    border: 1px lightgrey dotted; 
+    width: 22vw; 
+    height: 16vw; 
+    font-family: 'Oxygen', 'Avenir Next', 'Helvetica Neue'; 
+    font-size: .85vw; 
+    text-align: center; 
+}
+
+.leftSquare {
+    margin-left: 2.5vw;
+}
+
+.rightSquare {
+    margin-left: 75.5vw;
+}
+
+.bottomSquare {
+    margin-top: 18vw; 
+}
+
+#mapBlock, #weatherBlock {
+    background-color: rgba(163, 205, 255, .5);
+}
+
+#infoBlock, #mapZoom {
+    background-color: rgba(92, 147, 213, .5);
+} 
+
+#mapZoom {
+    opacity: .8; 
+}
+
+.infoSquare>h1 {
+    font-size: 2.3vw; 
+    font-family: 'Avenir Next', 'Helvetica Neue'; 
+    color: rgb(80, 80, 80);
+}
+
+#infoBlock>h1 {
+    font-size: 2vw; 
+}
+
+.infoSquare>h3 {
+    font-size: 1.6vw; 
+}
+
+#weatherDescrip {
+    font-size: 14px;  
+}
+
+#weatherError {
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+
+/*-----------------------------Footer-----------------------------*/
+
+footer {
+    height: 375px;
+    background-color: palegoldenrod;
+}
+
+
+
+/*-----------------------------Responsive+Mobile-----------------------------*/
+
+@media(max-height: 500px) {
+    .jumbotron {
+        height: 250px; 
+    }
+}
+
+@media(max-width: 1300px) {
+    .infoSquare>h1{
+        color: rgb(100, 100, 100);
+    }
+    
+    #magicTemp, #weatherDescrip {
+        display: none; 
+        opacity: 0; 
+    }  
+}
+
+@media(max-width: 1080px) {
+    .infoSquare, #weatherDescrip {
+        display: none; 
+    } 
+        
+    .jumbotron>h1 {
+        font-size: 60px; 
+    }
+    
+    .jumbotron>p {
+        font-size: 25px; 
+    }
+}
+
+@media only screen and (max-device-width: 800px) {  
+    .jumbotron {
+        height: 20vh;
+    }
+    
+    .footer {
+        height: 15vh;
+    }
+    
+    .jumbotron, footer {
+        background: rgba(255, 160, 122, .5) !important; 
+    }
+    
+    form {
+        margin-left: 15vw; 
+        margin-right: 15vw; 
+    }
+    
+    input {
+        height: 150px;
+        font-size: 40px;
+    }
+    
+    #submitButton {
+        width: 50vw; 
+        color: seagreen; 
+        background-color: white; 
+        border-color: seagreen;
+    }
+    
+    .ui-autocomplete { 
+        font-size: 22px; 
+        max-height: 170px; 
+        overflow-y: scroll; 
+        overflow-x: hidden;
+    }
+}
